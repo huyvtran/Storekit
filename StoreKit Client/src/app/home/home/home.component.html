@@ -1,0 +1,18 @@
+
+<div class="mat-container" [class.is-mobile]="mobileQuery.matches">
+  <mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav   #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
+                   [fixedInViewport]="mobileQuery.matches" fixedTopGap="0" [opened]="!mobileQuery.matches " >
+      <app-navbar (toggle)="toggle($event, snav)"></app-navbar>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+</div>
+<button (click)="snav?.toggle()" mat-fab class="menu"  color="primary">
+  <mat-icon aria-label="menu" *ngIf="!snav?.opened"> keyboard_arrow_right</mat-icon>
+  <mat-icon aria-label="menu"  *ngIf="snav?.opened"> keyboard_arrow_left</mat-icon>
+</button>

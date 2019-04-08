@@ -1,0 +1,41 @@
+.container {
+  max-width: 700px;
+  margin-top: 20px;
+}
+
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  text-align: center;
+  margin: 15px;
+}
+
+.location-btn {
+  float: none;
+  margin: 0 auto;
+}
+
+.location-msg {
+  margin-bottom: 20px;
+}
+.card{
+  border: none;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+mat-form-field {
+  width: 100%;
+  margin: 5px;
+}
+.button{
+  margin: 10px auto;
+}

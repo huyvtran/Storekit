@@ -1,0 +1,130 @@
+
+.page-container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+
+}
+
+.mobile-page-container {
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+}
+.row .col-md{
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column;
+}
+.col-md mat-card{
+  flex: 0 1 auto;
+}
+
+
+.item-wrapper {
+  overflow-x: hidden;
+  overflow-y: auto;
+  flex: 1 1 auto;
+  margin: 10px;
+}
+
+.footer-end{
+  flex: 0 1 auto;
+  width: 100%;
+
+}
+
+.all-products{
+  overflow-x: hidden;
+  overflow-y: auto;
+  flex: 1 1 auto;
+  margin: 10px;
+}
+
+.icon-button {
+  cursor: pointer;
+
+}
+
+.material-icons {
+  color: white;
+}
+
+/*empty message style*/
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  flex: 1 1 auto;
+  height: 100%;
+}
+
+.grid-wrapper .card {
+  grid-row: 2/6;
+  grid-column: 2/6;
+  z-index: -1;
+  border: none;
+}
+
+.grid-wrapper .card {
+  border: none;
+  background-color: #fafafa;
+}
+
+.grid-wrapper .grey-icon {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  width: 120px;
+  margin: 0 auto;
+}
+
+.grid-wrapper .content {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  color: grey;
+}
+.scrolling-wrapper {
+  cursor: pointer;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  flex: 0 1 auto;
+
+}
+.scrolling-wrapper mat-card {
+  display: inline-block;
+  width: 200px;
+  margin: 5px;
+}
+.scrolling-wrapper mat-card mat-icon{
+  color: #06bca9;
+}
+.scrolling-wrapper::-webkit-scrollbar {
+  height: 5px;
+}
+.scrolling-wrapper::-webkit-scrollbar-track {
+ height: 5px;
+  border-radius: 10px;
+}
+.scrolling-wrapper::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+}
+mat-toolbar{
+  position: absolute;
+  bottom: 0;
+
+}
+
+
+/** {*/
+  /*outline: 1px solid red;*/
+/*}*/

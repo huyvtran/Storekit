@@ -1,0 +1,36 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.page {
+  height: 100%;
+  background-color: white;
+}
+form{
+  margin-top: 20px;
+}
+form mat-form-field {
+  width: 100%;
+}
+
+row mat-form-field {
+  max-width: 50%;
+}
+
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  text-align: center;
+  margin: 15px;
+}
+
+mat-card{
+  margin-top: 10px;
+}
+
+mat-accordion{
+  margin-bottom: 20px ;
+}
